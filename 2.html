@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Team Hover</title>
+	<style type="text/css"> 
+	
+		* {margin:0; padding:0; box-sizing:border-box}
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		body{font-family:'poppins',sans-serif;}
+		.team {width:1000px; margin:100px auto; display:flex; justify-content:space-between;}
+		.single_team{flex-basis:320px; position:relative; overflow:hidden;}
+		.single_team img{width:100%;}
+		.team_hover{position:absolute; left:0; top:0; background:rgb(0,0,0,0.5); height:100%; width:100%; color:white;display:flex; justify-content:center; align-items:center;padding:20px; opacity:0; visibility:hidden; transition:2s; transform:scale(0) rotate(0)}
+		.team_hover h4 {font-size:26px; text-transform:uppercase; text-align:center;}
+		.team_hover h4 span{display:block; font-size:14px; text-transform:lowercase;}
+		.single_team:hover .team_hover{opacity:1; visibility:visible; transform:scale(1) rotate(360deg)}
+	
+	</style>
+</head>
+<body>
+	
+	<div class="team"> 
+		<div class="single_team"> 
+			<img src="file/pexels-pixabay-262391.jpg" alt="" />
+			<div class="team_hover"> 
+				<h4>john deo <span>web developer</span></h4>
+			</div>
+		</div>
+		<div class="single_team"> 
+			<img src="file/pexels-pixabay-262391.jpg" alt="" />
+			<div class="team_hover"> 
+				<h4>john deo <span>web developer</span></h4>
+			</div>
+		</div> 
+		<div class="single_team"> 
+			<img src="file/pexels-pixabay-262391.jpg" alt="" />
+			<div class="team_hover"> 
+				<h4>john deo <span>web developer</span></h4>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
